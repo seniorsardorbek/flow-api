@@ -14,7 +14,7 @@ export class FlowService {
   ) {}
   create (createFlowDto: CreateFlowDto) {
     try {
-      return this.flowModel.create(createFlowDto )
+      return this.flowModel.create(createFlowDto)
     } catch (error) {
       console.log(error)
     }
