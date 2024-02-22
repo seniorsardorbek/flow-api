@@ -25,7 +25,7 @@ export class FlowService {
       const { limit = 10, offset = 0 } = page || {}
       const total = await this.flowModel.find().countDocuments()
       const data = await this.flowModel
-        .find()
+        .find().sort({created_at : -1})
         .limit(limit)
         .skip(limit * offset)
       return { data, limit, offset, total }

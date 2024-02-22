@@ -31,7 +31,6 @@ export class Flow {
   @Prop({ timestamps: true })
   created_at: Date;
 
-  @Prop({ timestamps: true })
-  updated_at: Date;
+
 }
 export const FlowSchema = SchemaFactory.createForClass(Flow)
